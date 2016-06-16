@@ -1,0 +1,68 @@
+.mw__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.mw__container {
+  position: absolute; }
+
+.mw__content {
+  position: relative;
+  overflow: hidden; }
+
+.mw__content__scrollable {
+  position: relative;
+  overflow: hidden; }
+
+.modal__resize-handler[data-dir="N"], .modal__resize-handler[data-dir="E"], .modal__resize-handler[data-dir="S"], .modal__resize-handler[data-dir="W"] {
+  z-index: 10; }
+
+.modal__resize-handler[data-dir="NE"], .modal__resize-handler[data-dir="SE"], .modal__resize-handler[data-dir="SW"], .modal__resize-handler[data-dir="NW"] {
+  z-index: 11;
+  width: 0.75em;
+  height: 0.75em; }
+
+.modal__resize-handler {
+  position: absolute; }
+  .modal__resize-handler[data-dir="N"] {
+    cursor: n-resize;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 0.5em; }
+  .modal__resize-handler[data-dir="NE"] {
+    cursor: ne-resize;
+    top: 0;
+    right: 0; }
+  .modal__resize-handler[data-dir="E"] {
+    cursor: e-resize;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.5em; }
+  .modal__resize-handler[data-dir="SE"] {
+    cursor: se-resize;
+    right: 0;
+    bottom: 0; }
+  .modal__resize-handler[data-dir="S"] {
+    cursor: s-resize;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0.5em; }
+  .modal__resize-handler[data-dir="SW"] {
+    cursor: sw-resize;
+    bottom: 0;
+    left: 0; }
+  .modal__resize-handler[data-dir="W"] {
+    cursor: w-resize;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0.5em; }
+  .modal__resize-handler[data-dir="NW"] {
+    cursor: nw-resize;
+    top: 0;
+    left: 0; }

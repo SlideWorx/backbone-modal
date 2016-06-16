@@ -1,0 +1,77 @@
+﻿%modal__resize-edge {
+  z-index: 10;
+}
+
+%modal__resize-corner {
+  z-index: 11;
+  width: 0.75em;
+  height: 0.75em;
+}
+
+.modal__resize-handler {
+  position: absolute;
+
+  &[data-dir="N"] {
+    @extend %modal__resize-edge;
+    cursor: n-resize;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 0.5em;
+  }
+
+  &[data-dir="NE"] {
+    @extend %modal__resize-corner;
+    cursor: ne-resize;
+    top: 0;
+    right: 0;
+  }
+
+  &[data-dir="E"] {
+    @extend %modal__resize-edge;
+    cursor: e-resize;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.5em;
+  }
+
+  &[data-dir="SE"] {
+    @extend %modal__resize-corner;
+    cursor: se-resize;
+    right: 0;
+    bottom: 0;
+  }
+
+  &[data-dir="S"] {
+    @extend %modal__resize-edge;
+    cursor: s-resize;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0.5em;
+  }
+
+  &[data-dir="SW"] {
+    @extend %modal__resize-corner;
+    cursor: sw-resize;
+    bottom: 0;
+    left: 0;
+  }
+
+  &[data-dir="W"] {
+    @extend %modal__resize-edge;
+    cursor: w-resize;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0.5em;
+  }
+
+  &[data-dir="NW"] {
+    @extend %modal__resize-corner;
+    cursor: nw-resize;
+    top: 0;
+    left: 0;
+  }
+}

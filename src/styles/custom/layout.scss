@@ -1,0 +1,16 @@
+.mw__container {
+  width: 30em;
+}
+
+.mw__content {
+  padding: 10px 20px;
+}
+
+.mw__content__scrollable {
+  margin-top: 10px; // equal to vertical padding of .mw__content
+  max-height: 70vh;
+}
+
+.mw__footer {
+  padding: 10px 20px;
+}

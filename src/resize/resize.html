@@ -1,0 +1,5 @@
+<div class="modal__resize-handlers js-m-resize-handlers">
+  <% ['N', 'E', 'S', 'W', 'NE', 'SW', 'NW', 'SE'].forEach(function(handler){ %>
+    <div class="modal__resize-handler js-m-resize-handle" data-dir="<%= handler %>" />
+  <%}) %>
+</div>

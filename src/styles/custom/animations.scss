@@ -1,0 +1,44 @@
+.mw__background {
+  transition: background 300ms;
+}
+
+.mw--open {
+  > .mw__container {
+    animation: mw__container--open ease 300ms;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50% 50%;
+  }
+}
+
+.mw--close {
+  > .mw__container {
+    animation: mw__container--close ease 300ms;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50% 50%;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes mw__container--open {
+  0% {
+    opacity: 0;
+    transform: translate(0, -25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes mw__container--close {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0, 25px);
+  }
+}

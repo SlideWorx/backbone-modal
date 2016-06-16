@@ -1,0 +1,72 @@
+$popup-header__background-color: #3c3c3c !default;
+$popup-header__text-color: #fff !default;
+$popup-background-color: #fff !default;
+
+.mw__wrapper {
+  user-select: none;
+
+  .js-m-draggable {
+    @include grab-cursor;
+  }
+
+  &.mw-move,
+  &.mw-move .js-m-draggable {
+    @include grabbing-cursor;
+  }
+}
+
+/* Background */
+.mw__background {
+  background: rgba(0, 0, 0, 0);
+}
+
+
+/* Container */
+.mw__container {
+  box-shadow: .1em .1em .5em #666;
+  background: #fff;
+  border-radius: 3px;
+}
+
+/* Content */
+.mw__header {
+  background: $popup-header__background-color;
+  color: $popup-header__text-color;
+  text-align: center;
+  border-radius: 3px 3px 0 0;
+}
+
+.mw__header-close {
+  cursor: pointer;
+}
+
+.mw__footer {
+  background: $popup-background-color;
+  border-radius: 0 0 3px 3px;
+
+  &:not(.has-no-border) {
+    border-top: solid 1px #ccc;
+  }
+}
+
+.mw__footer-with-message-mcontainer {
+  text-align: center;
+}
+
+.mw__content {
+  background: $popup-background-color;
+
+  .iScrollVerticalScrollbar {
+    background: #ededed;
+  }
+}
+
+.mw--open {
+  > .mw__background {
+    background: rgba(0, 0, 0, .3);
+  }
+
+  //+ .mw--open > .mw__background {
+  //  background: rgba(0, 0, 0, 0);
+  //}
+}

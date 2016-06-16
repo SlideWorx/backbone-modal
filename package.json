@@ -1,0 +1,39 @@
+{
+  "name": "backbone-modal",
+  "version": "1.0.0",
+  "description": "Backbone Modal Component",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:dist & npm run build:demo",
+    "build:dist": "webpack --config webpack.config.js",
+    "build:demo": "webpack --config webpack-demo.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SlideWorx/backbone-modal"
+  },
+  "keywords": [
+    "modal",
+    "backbone"
+  ],
+  "author": "SlideWorx (http://slideworx.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SlideWorx/backbone-modal/issues"
+  },
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "jquery": "^2.2.4",
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.21.0",
+    "node-sass": "^3.7.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "text-loader": "0.0.1",
+    "webpack": "^1.13.1"
+  }
+}
