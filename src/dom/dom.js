@@ -8,6 +8,8 @@ define(function(require, exports, module) {
   var WINDOW = $(window);
 
   module.exports = {
+    closeAnimationTime: 300,
+
     /**
      * Renders modal window and shows it to the user.
      * @method render
@@ -56,7 +58,7 @@ define(function(require, exports, module) {
       this.removed = true;
       WINDOW.off('keydown.mw__keybinds-' + this.cid).off('resize.mw__resize-' + this.cid);
       this.$el.parent().removeClass('mw--open').addClass('mw--close');
-      setTimeout(this.modalRemove, 300);
+      setTimeout(this.modalRemove, this.closeAnimationTime);
     },
 
     /**
