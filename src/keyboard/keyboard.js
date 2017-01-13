@@ -2,7 +2,6 @@ define(function(require, exports, module) {
   'use strict';
 
   var $ = require('jquery');
-  var targetIsEditable = require('../utils/targetIsEditable');
 
   module.exports = {
     /**
@@ -12,7 +11,7 @@ define(function(require, exports, module) {
      * @returns {undefined|false} It depends if event has been blocked or not.
      */
     modalKeyboard: function(ev) {
-      if ((ev.which !== 27) && (ev.which !== 13) || targetIsEditable(ev)) {
+      if ((ev.which !== 27) && (ev.which !== 13)) {
         return;
       }
 
